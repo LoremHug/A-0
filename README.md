@@ -146,7 +146,6 @@ RP is probably not meant for you — and that is fine.
 - Concept: stable
 - Reference prompt: working
 - Scope: intentionally limited
-
 This repository fixes a **mode of interaction**, not a roadmap.
 
 ---
@@ -168,3 +167,6 @@ It simply stops them from moving
 when no stable direction exists.
 
 Everything else is a side effect.
+
+**RP works without the math.**
+**The math explains why it works.**
