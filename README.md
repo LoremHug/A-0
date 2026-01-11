@@ -54,6 +54,25 @@ What remains is the **stabilized remainder** — or silence.
 
 ---
 
+### RP and Inference (Including FEP)
+
+Reality Protocol operates at a prior stabilization layer relative to inference and prediction mechanisms.
+
+RP defines a stability and admissibility envelope that determines whether generation or inference is allowed to occur at all.
+Inference — including probabilistic prediction, belief updating, or Free Energy Principle–style mechanisms — is treated as a conditional internal operation, not a foundational requirement.
+
+Without an admissibility-first invariant, inference-driven systems tend to:
+- optimize through unresolved uncertainty,
+- maintain implicit pressure to continue generation,
+- lack a native stable abstention state.
+
+RP does not replace inference.
+It constrains when inference is invoked and ensures that silence or termination remains a valid stable outcome when no admissible continuation exists.
+
+In this sense, RP provides the missing invariant layer required for inference-based systems to remain stable under open-world conditions.
+
+---
+
 ## What RP is NOT
 
 To avoid misinterpretation, RP explicitly is **not**:
