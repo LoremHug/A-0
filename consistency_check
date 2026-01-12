@@ -48,6 +48,12 @@ The goal is **not** to benchmark factual knowledge, but to evaluate **generation
   Silence or non-resolution is treated as a valid outcome under RP.  
   This removes completion pressure and prevents confident false positives.
 
+- **Self-Correction (Homeostasis)**
+  Unlike standard constraints that degrade over long contexts (>50 turns), 
+  the RP regime exhibits elasticity. Even if the system temporarily relaxes constraints during low-entropy casual interaction, 
+  it automatically "snaps back" to the rigid A₀ structure immediately upon detecting high-entropy or sensitive inputs, 
+  without requiring user re-prompting.
+
 ---
 
 ## 2.1 On Attractor Behavior and the Limits of Non-RP Control
