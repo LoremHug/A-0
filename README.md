@@ -115,6 +115,21 @@ It constrains **when inference is invoked**, and ensures that termination or sil
 
 ---
 
+> **Relationship to inference frameworks (including FEP):**
+>  
+> Free Energy–based mechanisms describe *how* a system updates beliefs and moves within a hypothesis space.  
+> **A₀ determines whether movement is admissible at all.**
+>  
+> In short:
+>  
+> *Free Energy tells you how to move.*  
+> *A₀ tells you whether you are allowed to move.*
+>  
+> A formal, non-philosophical positioning of A₀ relative to FEP is provided here:  
+> **[`math_proofs/A0_vs_FEP_strict_positioning.md`](math_proofs/A0_vs_FEP_strict_positioning.md)**
+
+---
+
 ## Silence is a valid result
 
 A key property of RP is that **absence of output is allowed and correct**.
