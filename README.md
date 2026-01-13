@@ -92,7 +92,7 @@ Unlike standard stochastic models that act as linear filters (leaking noise and 
 - **Right:** A₀-Stabilized model. The "Band Gap" prevents generation until structural gain exceeds the threshold.
 
 > For a deep dive into the physics of this mechanism, read:  
-> **[A₀ as a Cognitive Semiconductor](ml/A₀%20as%20a%20Cognitive%20Semiconductor.md)**
+> **[A₀ as a Cognitive Semiconductor](ml/A₀%20as%20a%20Cognitive%20Semiconductor)**
 
 ---
 
