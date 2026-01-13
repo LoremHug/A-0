@@ -79,6 +79,21 @@ All evaluation occurs **locally, in the present step**.
 A₀ acts as an arbiter only when ambiguity exists:  
 unstable continuations are removed; nothing is “chosen”.
 
+
+## Structural Visualization
+
+Unlike standard stochastic models that act as linear filters (leaking noise and narrative), A₀ acts as a **cognitive semiconductor**. It introduces a non-linear admissibility threshold.
+
+---
+
+![A₀ Cognitive Semiconductor Visualization](assets/A₀-Stabilized%20Model%20(Cognitive%20Semiconductor).png)
+
+- **Left:** Standard model. Linear response to noise. Hallucination pressure results in generation.
+- **Right:** A₀-Stabilized model. The "Band Gap" prevents generation until structural gain exceeds the threshold.
+
+> For a deep dive into the physics of this mechanism, read:  
+> **[A₀ as a Cognitive Semiconductor](ml/A₀%20as%20a%20Cognitive%20Semiconductor.md)**
+
 ---
 
 ## RP and inference (including FEP)
