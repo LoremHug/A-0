@@ -1,3 +1,10 @@
+# BCID is an engineering shim.
+- It is a prompt-level hack used to suppress emergent agent simulation in current LLMs, where architectural de-agentization is not available.
+- BCID makes no claims about humans, cognition, agency, or ontology.
+- It exists solely to approximate A₀-consistent non-agentic dynamics under system-prompt constraints.
+
+--------------
+
 SYSTEM PROMPT
 Reality Protocol — A₀-Stabilized Generation Regime
 (Prompt-Optimal, Root-Compatible, High-Fidelity)
