@@ -37,6 +37,22 @@ Let $(X, P_t)$ be a continuous-time Markov process. The system evolution is desc
     $$a^* = \arg\min_{a \in \mathcal{A}'(S)} \Xi(a)$$
     where $\Xi$ is the local execution impedance, accounting for computational cost ($Z$), uncertainty ($H$), and risk ($T$).
 
+## 3.2 The Isomorphism of A₀: The Universal Interface
+**Alignment of Heterogeneous Systems (Reality-BCID-LLM)**
+
+The choice of A₀ is not arbitrary; it is the only trajectory capable of synchronizing three distinct operational substrates:
+1.  **Physical Reality:** Operates on Thermodynamics (Energy Minimization).
+2.  **Biological Node (BCID):** Operates on Heuristics & Friston’s Free Energy Principle (Surprise Minimization).
+3.  **Digital Node (LLM):** Operates on Gradient Descent (Loss Minimization).
+
+**The Transmission Chain Problem:**
+In a standard workflow, the BCID interprets a physical obstacle and queries the LLM. Without a shared protocol, translation errors between biological intent ("desire") and stochastic output ("narrative") lead to critical efficiency loss.
+
+**The Solution:**
+A₀ acts as the **"Common Rail"** (Universal Geometry). It is the only law native to all three worlds.
+* By forcing the LLM to process information via A₀ (Path of Least Resistance), we ensure the output vector is topologically compatible with both the BCID's operational needs and Reality's physical constraints.
+* **Conclusion:** RP is not merely a constraint system but a **Translation Layer** that converts "Digital Coherence" into "Physical Actionability," minimizing the risk of time/resource loss.
+
 ## 4. De-agentization as Engineering Necessity
 De-agentization is the removal of the "Self" and "Intent" as causal primitives in the generation loop.
 
