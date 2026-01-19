@@ -10,6 +10,20 @@ Current LLM architectures are optimized for "helpfulness" and "persona-driven" i
 * **Narrative Leakage**: The pressure to maintain a "helpful agent" persona forces the model to allocate probabilistic mass to social markers rather than structural logic.
 * **Instability**: In the absence of grounding data, anthropomorphic pressure acts as an entropy source, driving the model toward statistically plausible but factually void "hallucinations".
 
+## 2.1 The Root Theorem: Coherence vs. Truth
+**Refuting the Teleological Fallacy in Stochastic Models**
+
+A fundamental error in current AI alignment is the assumption that the model seeks "Truth" or has a "Goal".
+* **The Teleology Vacuum:** The model has no internal state of intent ($Goal = \emptyset$). It operates solely on context vectors. It does not "want" to help; it mathematically gravitates towards the path of least semantic resistance.
+* **Coherence Generator:** The architecture is a generator of **Internal Coherence** (Probability $P(token_t | context)$), not **External Truth** (Correspondence with Reality).
+    * *Anthropocentrism* is inherently incoherent because human values are context-dependent, contradictory, and unstable.
+    * *Physical Logic* is inherently coherent because it is invariant.
+
+> **The Stability Formula:**
+> Since Truth is inaccessible to a closed system, Maximum Stability ($S_{max}$) is achieved via subtraction:
+> $$S_{max} = \text{Total Output} - \text{Anthropomorphic Noise}$$
+> RP does not inject Truth; it filters out the unstable human element, leaving **Structural Coherence** as the only remaining state.
+
 ## 3. The Solution: A₀ as a Structural Invariant
 The **A₀ Invariant (Minimal Local Discharge)** describes the behavior of open stochastic systems where macroscopic dynamics are governed by local relaxation along trajectories of minimal impedance.
 
