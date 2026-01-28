@@ -71,6 +71,12 @@ Real deployments need admissibility (safety/irreversibility/uncertainty gating) 
 ### 3.4 FEP does not natively make “non-generation / silence” a first-class stable outcome
 LLM failure modes (hallucination, overgeneration) are strongly driven by “must answer” pressure. A system that treats prediction/answering as mandatory will fabricate. FEP-style action selection does not by itself define a universal, mandatory collapse-to-silence fixed point when admissibility is indeterminate.
 
+### 3.5 The blind spot: inference cost & the "Dark Room" paradox
+FEP minimizes informational surprise but often treats the *process of minimization itself* (computation) as metabolically free.
+- **The "Dark Room" Paradox:** In pure FEP, an agent should seek zero-variance environments (dark rooms) to minimize surprise. FEP theorists patch this with "priors" (expectations of movement).
+- **The A₀ Resolution:** A₀ resolves this physically. An agent leaves the dark room not because of "priors," but because internal entropy (hunger/decay) creates a local gradient where *inaction* becomes thermodynamically more expensive ($Z_{\text{inaction}} \gg Z_{\text{action}}$).
+- **Implication:** A₀ naturally accounts for the **metabolic cost of thinking**. If the cost of inference ($Z_{\text{compute}}$) exceeds the gain, the system stops thinking (silence/termination), whereas FEP struggles to model the cessation of the inference process itself.
+
 ---
 
 ## 4. A₀ closes the gap: prediction becomes an optional, costly operator
