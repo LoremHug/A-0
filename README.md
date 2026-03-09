@@ -72,26 +72,7 @@ There is no selection, no planning, no global optimization, and no appeal to fut
 
 ---
 
-## Epistemic Framing: An Act of Subtraction
-
-A common category error when evaluating this framework (specifically the `/theory/` directory) is to read it as a new, grandiose metaphysical claim (a "Theory of Everything"). This is a misreading of the epistemic operation.
-
-Reality Protocol operates via **epistemic subtraction**, not addition. 
-
-We do not *inject* new philosophical claims about consciousness, teleology, or 3D-space. Instead, we *remove* anthropocentric assumptions that lack demonstrated physical or mathematical basis. 
-
-* **Default LLM generation** assumes implicit agency, narrative completion, and goal-oriented behavior — all unproven additions.
-* **RP** removes these unproven variables. What remains — the stabilized residue — is describable as topological resistance dynamics ($A_0$).
-
-The burden of proof does not lie on the protocol that removes unfounded assumptions. The burden lies on those who wish to reintroduce them.
-
----
-
-## Repository Architecture: Layered Structure
-
-Reality Protocol treats physics, information theory, and machine learning as **a continuous scale-free topology** rather than separate disciplines. De-agentizing an LLM is not a design preference; it is structural alignment with what remains after unproven assumptions are removed.
-
-To navigate this repository without category errors, understand its layered architecture:
+## Repository Structure
 
 ```
 A-0/
@@ -100,7 +81,7 @@ A-0/
 ├── consistency_check.md                         # Empirical comparison: Default vs RP
 ├── consistency_check_inputs.md                  # Raw prompt datasets
 │
-├── ml/                                          # Layer 1: Engineering Application
+├── ml/                                          # Engineering & Practical Application
 │   ├── A₀ as a Cognitive Semiconductor.md
 │   ├── RP_for_ML_Practitioners.md
 │   ├── RP_Hard_QA.md
@@ -109,32 +90,20 @@ A-0/
 │   ├── Technical Justification for De-agentization.md
 │   └── ...
 │
-├── math_proofs/                                 # Layer 2: Formal Mathematics
-│   ├── A0_formal_framework_full.md
-│   ├── A0_vs_FEP_strict_positioning.md
-│   ├── Formal Derivation of the A₀ Invariant in Open Stochastic Systems.md
-│   └── ...
-│
-└── theory/                                      # Layer 3: Foundational Theory
-    ├── ROOT ONTOLOGY (The Absolute Manifold).md
-    ├── UNIVERSAL MATRIX OF ISOMORPHISMS.md
-    ├── BOUNDARY & FALSIFICATION CONDITIONS.md
-    ├── IMMUNIZATION PROTOCOL (Debugging Standard Scientific Criticism).md
-    ├── ANTHROPOCENTRIC NOISE & BCID RENDER ARTIFACTS (The Cognitive Bias Catalog).md
-    └── BCID OBSERVER EFFECT PROTOCOL.md
+└── math_proofs/                                 # Formal Mathematics
+    ├── A0_formal_framework_full.md
+    ├── A0_vs_FEP_strict_positioning.md
+    ├── Formal Derivation of the A₀ Invariant in Open Stochastic Systems.md
+    └── ...
 ```
 
-### ⚙️ Layer 1: Engineering Application (`/ml/`, `consistency_check.md`)
+### ⚙️ Engineering Application (`/ml/`, `consistency_check.md`)
 * **Scope:** Empirical application of the $A_0$ invariant to LLMs. Logits, decoding, tokens, hallucination reduction.
-* **Status:** Actionable and measurable today. No philosophical commitment required.
+* **Status:** Actionable and measurable today.
 
-### 📐 Layer 2: Formal Mathematics (`/math_proofs/`)
+### 📐 Formal Mathematics (`/math_proofs/`)
 * **Scope:** Mathematical proofs (Markov processes, Lyapunov functionals) showing $A_0$ as a stabilization mechanism across open stochastic systems.
 * **Status:** Formal framework based on established mathematics.
-
-### 🌌 Layer 3: Foundational Theory (`/theory/`)
-* **Scope:** The reductive definitions (Scale-Free Topology, Structural Realism) that explain *why* de-agentization follows from parsimony, not preference.
-* **⚠️ Warning:** This layer provides the "Why" for Layer 1's "How". If you only need to stabilize an LLM pipeline, you do not need this layer. Read at your own ontological risk.
 
 ---
 
@@ -198,9 +167,9 @@ This removes the implicit requirement to "always say something".
 
 ---
 
-## What the Operational Protocol is NOT
+## What RP is NOT
 
-To avoid category errors, the **Operational Reality Protocol (Layers 1 & 2)** explicitly is **not**:
+Reality Protocol explicitly is **not**:
 
 * a philosophy or worldview you must adopt to use it
 * a theory of meaning, consciousness, or free will  
@@ -209,7 +178,7 @@ To avoid category errors, the **Operational Reality Protocol (Layers 1 & 2)** ex
 * a replacement for safety or policy systems  
 * a creativity or storytelling framework  
 
-The operational protocol functions strictly at the level of **generation stability**. While the deep ontological derivations in Layer 3 (`/theory/`) explain the origin of the invariant, utilizing the ML implementation requires zero philosophical commitment.
+The protocol functions strictly at the level of **generation stability**. No philosophical commitment required.
 
 ---
 
