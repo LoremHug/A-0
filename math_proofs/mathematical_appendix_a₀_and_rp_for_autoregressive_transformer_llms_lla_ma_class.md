@@ -13,7 +13,7 @@ Let $\mathcal{V}$ be a finite vocabulary, and let $\text{EOS} \in \mathcal{V}$. 
 ### 1.2 Autoregressive Model
 An autoregressive model defines conditional distributions:
 $$\pi_\theta(x_t \mid x_{<t}) \in \Delta(\mathcal{V})$$
-For LLaMA‑class, it is a deterministic mapping to logits $\ell_t \in \mathbb{R}^{|\mathcal{V}|}$, then $\pi_\theta(x_t \mid x_{<t}) = \operatorname{softmax}(\ell_t / \tau)$.
+For LLaMA‑class, it is a deterministic mapping to logits $\ell_t \in \mathbb{R}^{|\mathcal{V}|}$, then $\pi_\theta(x_t \mid x_{<t}) = \text{softmax}(\ell_t / \tau)$.
 
 ### 1.3 State Space
 Define generation state as $S_t := (x_{<t}, h_t)$. Let $\mathcal{S}$ be the set of reachable states.
