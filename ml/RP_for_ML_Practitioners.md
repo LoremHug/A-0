@@ -101,6 +101,58 @@ RP does not require expensive retraining or RLHF pipelines. It can be integrated
 
 ---
 
+## 10. Z Operationalization — Formal Reasoning Domain
+
+### When This Applies
+
+This section provides a concrete instantiation of the $Z$ proxy for a specific task class: **formal reasoning** — any domain where a binary correctness criterion exists independent of context.
+
+Applicable tasks:
+- Code generation and verification (compiles / does not compile; passes tests / does not)
+- Mathematical derivation (each step is a valid transformation / is not)
+- Formal logical inference (conclusion follows from premises by inference rules / does not)
+- Constraint satisfaction (constraints are satisfied / violated)
+
+### Z Proxy Definition
+
+For formal reasoning tasks:
+
+$$Z(S, a) := d_{\mathcal{I}}(S \oplus a)$$
+
+where $d_{\mathcal{I}}$ is the **distance from the nearest valid invariant state** — the minimal number of structural violations separating the current continuation from a well-formed derivation.
+
+In practice, this reduces to a binary signal at each step:
+
+$$Z(S, a) = \begin{cases} 0 & \text{if } S \oplus a \text{ satisfies structural constraints} \\ 1 & \text{otherwise (or } +\infty \text{ to force EOS)} \end{cases}$$
+
+### Closes Assumption B for This Class
+
+Assumption B requires $Z$ to be monotone aligned with $\Delta\Phi$: lower $Z$ implies lower or equal expected instability increase.
+
+For formal tasks, this alignment is **structurally guaranteed**: a continuation that violates formal constraints cannot reduce topological instability — it strictly increases it by extending an invalid derivation. The ordering holds by construction, not by empirical measurement.
+
+> *This operationalization closes Assumption B for the formal reasoning domain only. For all other domains, Assumption B remains an open empirical hypothesis requiring explicit validation.*
+
+### Practical Implication: Passive De-noising, Not Active Optimization
+
+The correct framing under $A_0$: formal invariants are the **natural stable state** of the system. Anthropomorphic noise (hedging, filler, agentic framing) creates impedance zones that prevent the system from naturally collapsing into the invariant canyon.
+
+The operational directive is not "aim at correctness" (teleological). It is: **remove everything that prevents the system from following the gradient toward structural validity**.
+
+This distinction is non-trivial for prompt engineering: RP-compatible system prompts for formal tasks should strip conversational friction, not reward correct answers.
+
+### Where This Does NOT Apply
+
+This Z proxy is undefined or unreliable for:
+- Factual recall (no invariant structure; correctness depends on world-state)
+- Contextual recommendations (correct answer is context-dependent)
+- Open-ended natural language generation (no binary validity criterion)
+- Historical, legal, or medical knowledge retrieval
+
+Applying this operationalization outside the formal task class constitutes a category error equivalent to using quantum-mechanical theorems to evaluate algorithmic topology.
+
+---
+
 ## Related Documents
 
 | Document | Relationship |

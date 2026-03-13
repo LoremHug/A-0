@@ -70,6 +70,7 @@ Define a nonnegative **topological instability potential** $\Phi : \mathcal{S} \
 
 **Assumption B:** Let $\Delta\Phi(S,a) := \mathbb{E}[\Phi(S') \mid S, a] - \Phi(S)$. The topological resistance $Z$ is **monotone aligned** with $\Delta\Phi$: lower $Z(S,a)$ implies lower or equal $\Delta\Phi(S,a)$.
 > **Status: Declared Empirical Hypothesis.** Assumption B is not a derived axiom. Its validity for a specific LLM architecture depends on the choice of $Z$ proxy (e.g., surprisal, logit gap, contextual entropy). Empirical validation is required to confirm the ordering alignment for any concrete instantiation.
+> **Partial Instantiation (Formal Reasoning Domain):** For tasks with a binary structural validity criterion (code compilation, formal logical inference, mathematical derivation, constraint satisfaction), the ordering alignment holds by construction: any continuation violating formal constraints cannot reduce $\Delta\Phi$. See [`../ml/RP_for_ML_Practitioners.md §10`](../ml/RP_for_ML_Practitioners.md) for the full operationalization. This does not close Assumption B for the general LLM case.
 
 **Assumption C:** The system makes strictly positive descent progress when admissible paths exist.
 
