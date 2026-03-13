@@ -59,7 +59,7 @@ Attempting to use an $A_0$-stabilized regime for "creativity" is a category erro
 
 
 
-FEP can be embedded *inside* RP as the local loss-minimization motor. However, RP is the structural envelope that decides whether the FEP motor is allowed to run at all. RP cannot be reduced to FEP.
+FEP can be embedded *inside* RP as the local loss-minimization motor. However, RP is the structural admissibility envelope: only transitions passing the $A_0$ threshold are topologically realizable — the FEP motor operates exclusively within that filtered space. RP cannot be reduced to FEP.
 
 ---
 

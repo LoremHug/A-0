@@ -61,9 +61,9 @@ RP is instantiated purely via system instructions (Meta-Prompts) that act as a s
 RP is implemented as a deterministic **external control layer (API Wrapper)** around the standard LLM inference pipeline. 
 
 The controller acts as an infinite heat sink:
-* It intercepts the prompt and the generated output.
+* It receives the prompt and the generated output as input.
 * It runs parallel deterministic heuristic checks (classifiers, length constraints, grounding checks).
-* It forces early termination or collapses the interaction if topological instability is detected, shielding the user from the model's thermal debt.
+* Trajectories exceeding instability thresholds physically dissipate: the interaction terminates, shielding the user from the model's thermal debt.
 
 
 

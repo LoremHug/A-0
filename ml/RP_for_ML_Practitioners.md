@@ -14,7 +14,7 @@ Standard autoregressive generation (e.g., LLaMA, GPT) operates under a continuou
 * **Default Failure Mode:** The model is architecturally forced to predict the next token even when predictive entropy (uncertainty) is critically high, leading to "confident hallucinations" (optimizing through noise).
 
 **RP-Gated Generation:**
-RP intercepts the tensor flow *before* token realization.
+RP mathematically filters the tensor flow *before* token realization.
 * Calculate logits $\to$ **Admissibility Gate** (Hard Masking) $\to$ **Impedance Scaling** $\to$ Argmin Collapse (or EOS).
 * Generation is treated as an optional, resource-heavy operator. If structural conditions are not met, the process deterministically terminates.
 

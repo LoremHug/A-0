@@ -88,5 +88,14 @@ The $A_0$ formalism serves as a bridging topology for several domains:
 ### 11. SCOPE AND LIMITATIONS
 The framework is exclusively applicable to open, dissipative, or stochastic computational systems. It guarantees the elimination of unstable trajectories (structural coherence), but it **does not guarantee global optimality or semantic external truth**.
 
-### 12. SUMMARY
+### 12. OPEN ASSUMPTIONS AND EMPIRICAL SCOPE
+
+The following structural assumptions underpin the formal guarantees of the $A_0$ framework. They are stated here explicitly as declared hypotheses, not axioms, to maintain I-14 (Structural Honesty).
+
+**Assumption B (Ordering Alignment):** The execution resistance $Z$ is monotone aligned with the instability potential $\Delta\Phi$. This is a necessary condition for the supermartingale convergence property.
+> *Validation requirement:* For any concrete instantiation (e.g., LLM token generation), the choice of $Z$ proxy (surprisal, logit confidence gap, contextual entropy, etc.) must be empirically verified to preserve this ordering. The theorem holds given the assumption; whether the assumption holds for a specific system is an empirical, not mathematical, question.
+
+**Session Boundary:** The Lyapunov functional $\Phi$ and the reference distribution $p^*$ are scoped to a single computational session. No cross-session or global convergence claims are made.
+
+### 13. SUMMARY
 $A_0$ defines a generalized, non-teleological mathematical invariant for local system stabilization. The Reality Protocol (RP) is its direct operational and engineering instantiation for artificial neural networks.

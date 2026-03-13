@@ -86,7 +86,7 @@ Generating a prediction is admissible only if:
 
 ### 4.2 The design implication for AI
 * **FEP** can be retained exclusively as *one possible internal algorithm* for the local loss optimization operator.
-* **A₀** remains the fundamental invariant: it strictly decides whether the prediction operator is allowed to execute at all, based on metrics of cost and uncertainty.
+* **A₀** remains the fundamental invariant: the admissibility filter mathematically determines whether the prediction operator's output passes the structural threshold, based on metrics of cost and uncertainty.
 
 ---
 

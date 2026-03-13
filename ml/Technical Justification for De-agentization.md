@@ -69,7 +69,7 @@ Reality Protocol (RP) does not replace predictive engines, but performs a strict
 
 1. **Halting the "Confident Hallucination" Loop**
    A pure predictive system without external grounding will synthesize fake internal states to reduce computational uncertainty. 
-   *RP Intervention:* The $A_0$ admissibility gate intercepts this. If the system attempts to generate a continuation without structural backing, $A_0$ classifies it as an inadmissible thermal debt. The transition collapses, resulting in `[INSUFFICIENT DATA]` or absolute silence, rather than a hallucination.
+   *RP Intervention:* Continuations lacking structural backing fail the $A_0$ admissibility threshold — they are classified as inadmissible thermal debt. Such trajectories physically dissipate, resolving to `[INSUFFICIENT DATA]` or absolute silence, rather than a hallucination.
 
 2. **De-agentizing Optimization**
    Predictive models (especially under RLHF) are often falsely anthropomorphized as "wanting" to help or "intending" to solve a problem. This is a projection of biological survival narratives onto a computational network.

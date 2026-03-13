@@ -41,25 +41,30 @@ Let $\mathcal{A}(S) = \mathcal{V}$ be the set of theoretically possible next tok
 $$\mathcal{A}'(S) := \{ a \in \mathcal{A}(S) : a \text{ satisfies the admissibility constraints } H \le H_{crit}, T \le T_{crit} \text{ at } S \}$$
 
 ### 3.2 Local Transition Impedance
-For any admissible token, define the computational resistance:
-$$\Xi(S,a) := \alpha Z(S,a) + \beta H(S,a) + \gamma T(S,a)$$
-with scalar weights $\alpha,\beta,\gamma \ge 0$.
+For any admissible token, the driving gradient is strictly the execution impedance $Z$:
+$$\Xi(S,a) := Z(S,a)$$
+Entropy ($H$) and risk ($T$) do not form a linear combination with $Z$ during the optimization phase. They act exclusively as binary feasibility gates establishing $\mathcal{A}'$ (§3.1). Once a token passes the admissibility filter, only $Z$ governs the realized transition.
 
 ### 3.3 Local Relaxation Rule
-$$a^*(S) \in \arg\min_{a \in \mathcal{A}'(S)} \Xi(S,a)$$
-**Crucial Distinction:** $\arg\min$ denotes a physical/computational gradient collapse into the path of least resistance. It is not a cognitive "choice" made by the model. When the admissibility filter yields an empty set ($\mathcal{A}'(S)=\varnothing$), the system forces a collapse to termination ($\text{EOS}$).
+$$a^*(S) \in \arg\min_{a \in \mathcal{A}'(S)} Z(S,a)$$
+**Crucial Distinction:** $\arg\min$ denotes a physical/computational gradient collapse into the path of least resistance. It is not a cognitive "choice" made by the model. When the admissibility filter yields an empty set ($\mathcal{A}'(S)=\varnothing$), the topology deterministically resolves to termination ($\text{EOS}$).
 
 ---
 
 ## 4. The A₀ Invariant (Discrete Form)
-**A₀ (Minimal Local Discharge, Discrete).** A generated trajectory $\{S_t\}$ is **A₀‑consistent** if, at each discrete step $t$, the token $x_t$ is an admissible local minimizer of the execution impedance $\Xi$ at state $S_t$.
+**A₀ (Minimal Local Discharge, Discrete).** A generated trajectory $\{S_t\}$ is **A₀‑consistent** if, at each discrete step $t$, the token $x_t$ is an admissible local minimizer of $Z$ within $\mathcal{A}'(S_t)$.
 
 ---
 
 ## 5. Stability Theorem: A₀ as Lyapunov‑Style Descent
 ### 5.1 Potential Function
 Define a nonnegative **topological instability potential** $\Phi : \mathcal{S} \to \mathbb{R}_{\ge 0}$.
-**Assumption B:** Let $\Delta\Phi(S,a) := \mathbb{E}[\Phi(S') \mid S, a] - \Phi(S)$. The execution impedance $\Xi$ is **monotone aligned** with $\Delta\Phi$.
+
+> **Scope Note (Session Boundary).** $\Phi$ and the associated reference distribution $p^*$ are **strictly session-scoped**: they are defined over a single inference call (one generation run within a fixed context window). $p^*$ is not a global stationary distribution of the LLM; it represents the minimal-entropy terminal state within the current session — the state in which no further admissible continuation exists, operationally corresponding to EOS emission. The assertion of monotonic descent for $\Phi$ applies exclusively within the boundaries of this isolated computational session. No cross-conversation or cross-session claims are made.
+
+**Assumption B:** Let $\Delta\Phi(S,a) := \mathbb{E}[\Phi(S') \mid S, a] - \Phi(S)$. The topological resistance $Z$ is **monotone aligned** with $\Delta\Phi$: lower $Z(S,a)$ implies lower or equal $\Delta\Phi(S,a)$.
+> **Status: Declared Empirical Hypothesis.** Assumption B is not a derived axiom. Its validity for a specific LLM architecture depends on the choice of $Z$ proxy (e.g., surprisal, logit gap, contextual entropy). Empirical validation is required to confirm the ordering alignment for any concrete instantiation.
+
 **Assumption C:** The system makes strictly positive descent progress when admissible paths exist.
 
 ### 5.2 The Stable Set
@@ -89,7 +94,14 @@ The inherent locality, stochasticity, and discrete step-wise nature of Transform
 
 ---
 
-## 9. Prompt‑Level Dynamics as a Topological Attractor
-Implementing structural constraints via system prompts (rather than direct kernel logit-masking) induces an implicit cost shaping over the model's base distribution $\Pi_0$:
-$$\Pi_{\mathrm{RP}}(a\mid S) \propto \Pi_0(a\mid S)\,\exp(-\lambda\,\widehat\Xi(S,a))$$
-Theorem 1 applies conditionally in this regime: the semantic vector field of the prompt establishes a mathematically defined "basin of attraction," increasing the thermodynamic resistance of non-admissible tokens and forcing the stochastic process to converge upon structurally stable outcomes.
+## 9. Implementation Regimes: Path D and Path A
+
+### 9.1 Path D — Deterministic Regime (Strict Theorem 1 Domain)
+When decoding operates with $T_{LLM} \to 0$ (greedy decoding), the system selects the strict $\arg\min Z$ at each step. **Theorem 1 is mathematically guaranteed in this regime.** The supermartingale property holds without qualification: $\mathbb{E}[\Phi(S_{t+1}) \mid S_t] \le \Phi(S_t)$ at every step, and convergence to $\mathcal{S}_*$ in finite time is assured under Assumptions A–C.
+
+### 9.2 Path A — Stochastic Regime (Empirical Approximation)
+In standard operational implementations ($T_{LLM} > 0$), enforcing constraints via system prompts induces an implicit cost shaping over the base distribution $\Pi_0$:
+$$\Pi_{\mathrm{RP}}(a\mid S) \propto \Pi_0(a\mid S)\,\exp(-\lambda\,\widehat{Z}(S,a))$$
+This provides a probabilistic bias toward lower $Z$ at the level of each individual token. It demonstrably reduces baseline impedance relative to unguided $\Pi_0$ (as empirically measured in `consistency_check.md`), but it **does not guarantee monotonic descent of $\Phi$ across the entire trajectory.** Path A is an empirical operational approximation, not a strict theoretical guarantee of local equilibrium convergence.
+
+> **Regime Summary:** Theorem 1 applies to Path D without qualification. For Path A, the framework provides a directional stabilization bias whose trajectory-level convergence properties remain empirically, not theoretically, established.

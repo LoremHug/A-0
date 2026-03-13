@@ -57,7 +57,7 @@ $$\Xi(S_t, a) = Z(S_t, a) + H(S_t, a) + T(S_t, a)$$
 ### 5.4 RP Transition Rule (Local Relaxation)
 The realized discrete transition deterministically follows the path of least computational resistance:
 $$a^* = \arg\min_{a \in \mathcal{A}'(S_t)} \Xi(S_t, a)$$
-If the admissibility filter yields an empty set ($\mathcal{A}'(S_t) = \varnothing$), the system forces a mathematical collapse to termination (Silence / `EOS`).
+If the admissibility filter yields an empty set ($\mathcal{A}'(S_t) = \varnothing$), the topology deterministically resolves to termination (Silence / `EOS`).
 
 ---
 
