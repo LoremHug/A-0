@@ -90,6 +90,7 @@ There is no "selection," no global planning, no moral alignment, and no appeal t
     │   ├── RP-X_Cybernetic_Exoskeleton_and_Entropy.md
     │   ├── RP_Extension_Social_Topology.md
     │   ├── Technical_Justification_for_De-agentization.md
+    │   └── RP_Theoretical_Extension_Scope.md                        # Research directions beyond LLM (conditional)
     │
     └── math_proofs/                                                 # Formal Mathematics
         ├── reality_protocol_rp_a₀_invariant_whitepaper.md           # Core Whitepaper
