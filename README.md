@@ -103,6 +103,7 @@ There is no "selection," no global planning, no moral alignment, and no appeal t
 ### ⚙️ Engineering Application (`/ml/`)
 * **Scope:** Architectural implementation of the $A_0$ invariant across the inference stack. Logits, decoding constraints, impedance matching, and hallucination reduction.
 * **Status:** Actionable and measurable today.
+* **Research Horizon:** [`ml/RP_Theoretical_Extension_Scope.md`](ml/RP_Theoretical_Extension_Scope.md) — conditional scope note identifying domains beyond LLM generation where the A₀ structural principle may be applicable, contingent on empirical validation of Assumption B.
 
 ### 📐 Formal Mathematics (`/math_proofs/`)
 * **Scope:** Mathematical proofs (Constrained Markov processes, Lyapunov functionals, Fokker-Planck dynamics) demonstrating $A_0$ as a universal stabilization mechanism across open stochastic systems.
