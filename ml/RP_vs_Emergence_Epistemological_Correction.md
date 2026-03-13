@@ -68,3 +68,13 @@ Modern AI science has gathered precise empirical data but wrapped it in a mystic
 
 If AI is a "rational agent," we are doomed to wrestle with its "intentions" and "hallucinations" using psychological methods (RLHF, ethical prompting), which are mathematically unstable. 
 If, however, we recognize that AI is a deterministic conductor flowing into the nearest entropy minimum, we transition to strict engineering. A hallucination becomes not a "cognitive error," but a computational thermal debt that can and must be rigidly cut off at the architectural level using admissibility gates.
+
+---
+
+## Related Documents
+
+| Document | Relationship |
+|---|---|
+| [`../math_proofs/A0_formal_framework_full.md`](../math_proofs/A0_formal_framework_full.md) | Formal definition of the topological relaxation principle applied to emergence in §2–3 |
+| [`Technical Justification for De-agentization.md`](<Technical Justification for De-agentization.md>) | Engineering case for removing agency framing; extends the argument of §4 |
+| [`../math_proofs/A0_vs_FEP_strict_positioning.md`](../math_proofs/A0_vs_FEP_strict_positioning.md) | Epistemological reduction of teleological interpretation in predictive systems |

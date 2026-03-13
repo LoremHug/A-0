@@ -114,3 +114,14 @@ A₀ does not require any generative model $p_\theta$, any variational family $q
 
 ## 7. Conclusion
 The mathematical framework of FEP remains a valuable internal computational tool for describing gradient transitions in artificial networks. However, FEP requires strict epistemological reduction when applied to AI. The $A_0$ invariant provides a strictly scientific, non-agentic envelope: computational admissibility precedes optimization; prediction is optional and costly; agency in machines is an inadmissible design flaw; silence is a valid stable remainder.
+
+---
+
+## Related Documents
+
+| Document | Relationship |
+|---|---|
+| [`A0_formal_framework_full.md`](A0_formal_framework_full.md) | Formal mathematical definition of A₀ used throughout this document |
+| [`mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md`](<mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md>) | LLM-specific operationalization; FEP embedded as optional operator within A₀ |
+| [`../ml/Technical Justification for De-agentization.md`](<../ml/Technical Justification for De-agentization.md>) | Engineering case for removing agency as causal primitive; extends this analysis |
+| [`../ml/RP_Hard_QA.md`](../ml/RP_Hard_QA.md) | Q4 directly addresses the "RP is FEP rebranded" objection |

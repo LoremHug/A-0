@@ -54,3 +54,13 @@ These neurobiological mappings are included not as an ontological claim about hu
 
 ## 9. Selected References
 *(Standard mathematical and thermodynamic references apply—e.g., Fokker-Planck dynamics, non-equilibrium statistical mechanics, and Lyapunov stability criteria).*
+
+---
+
+## Related Documents
+
+| Document | Relationship |
+|---|---|
+| [`A0_formal_framework_full.md`](A0_formal_framework_full.md) | Discrete-time formalization of this continuous proof; engineering-ready framework |
+| [`mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md`](<mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md>) | LLM-specific instantiation with Theorem 1 and implementation regimes |
+| [`../ml/RP_Theoretical_Extension_Scope.md`](../ml/RP_Theoretical_Extension_Scope.md) | Research directions based on the domain-agnostic structure proven here |

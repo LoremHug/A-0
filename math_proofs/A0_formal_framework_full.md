@@ -99,3 +99,15 @@ The following structural assumptions underpin the formal guarantees of the $A_0$
 
 ### 13. SUMMARY
 $A_0$ defines a generalized, non-teleological mathematical invariant for local system stabilization. The Reality Protocol (RP) is its direct operational and engineering instantiation for artificial neural networks.
+
+---
+
+## Related Documents
+
+| Document | Relationship |
+|---|---|
+| [`Formal Derivation of the A₀ Invariant in Open Stochastic Systems.md`](<Formal Derivation of the A₀ Invariant in Open Stochastic Systems.md>) | Continuous-time proof underlying this discrete framework |
+| [`mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md`](<mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md>) | LLM-specific translation of this framework with Theorem 1 and implementation regimes |
+| [`A0_vs_FEP_strict_positioning.md`](A0_vs_FEP_strict_positioning.md) | Strict positioning of A₀ relative to the Free Energy Principle |
+| [`../ml/RP_for_ML_Practitioners.md`](../ml/RP_for_ML_Practitioners.md) | Engineering translation: logits, decoding, inference-time implementation |
+| [`../ml/RP_Theoretical_Extension_Scope.md`](../ml/RP_Theoretical_Extension_Scope.md) | Research directions: structural extension beyond LLM domain (conditional) |

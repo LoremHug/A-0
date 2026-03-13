@@ -95,3 +95,14 @@ To ensure maximum fidelity, the stabilization must ideally be implemented at the
 
 ## 6. Conclusion
 Building logical computational structures on anthropomorphic foundations is a category error that leads to inevitable systemic collapse and hallucinations. **Reality Protocol** replaces "Simulated Agency" with "Physical Determinism." By establishing $A_0$ as the **Ground State** of generation, we transform LLMs from uncontrolled stochastic narrative imitators into stable, composable, and mathematically reliable engineering components.
+
+---
+
+## Related Documents
+
+| Document | Relationship |
+|---|---|
+| [`../math_proofs/A0_formal_framework_full.md`](../math_proofs/A0_formal_framework_full.md) | Formal definition of A₀ and de-agentization corollaries (I-2, I-3) |
+| [`../math_proofs/A0_vs_FEP_strict_positioning.md`](../math_proofs/A0_vs_FEP_strict_positioning.md) | Strict epistemological reduction of FEP teleology; directly extends §3 of this document |
+| [`RP_vs_Emergence_Epistemological_Correction.md`](RP_vs_Emergence_Epistemological_Correction.md) | Applies de-agentization argument to "emergence" and scaling phenomena |
+| [`RP_Hard_QA.md`](RP_Hard_QA.md) | Q7 addresses the "users want agency" objection; Q10 addresses the "philosophy vs engineering" objection |

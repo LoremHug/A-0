@@ -158,3 +158,14 @@ The current status of each candidate domain:
 ---
 
 *This document is a conditional research scope note. It does not modify, extend, or qualify any theorem, assumption, or empirical claim in the core RP documentation.*
+
+---
+
+## Related Documents
+
+| Document | Relationship |
+|---|---|
+| [`../math_proofs/A0_formal_framework_full.md`](../math_proofs/A0_formal_framework_full.md) | Source of the five structural requirements used in §1 of this document |
+| [`../math_proofs/mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md`](<../math_proofs/mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md>) | Primary validation domain; Assumption B defined here |
+| [`../math_proofs/Formal Derivation of the A₀ Invariant in Open Stochastic Systems.md`](<../math_proofs/Formal Derivation of the A₀ Invariant in Open Stochastic Systems.md>) | Continuous proof establishing domain-agnostic character of A₀ |
+| [`../consistency_check.md`](../consistency_check.md) | Empirical baseline; the results that must be reproduced before extension scope activates |

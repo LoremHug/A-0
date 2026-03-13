@@ -98,3 +98,15 @@ RP does not require expensive retraining or RLHF pipelines. It can be integrated
 ## 9. Minimal Operational Summary for Inference
 
 **Evaluate Base Distribution $\to$ Apply Binary Admissibility Mask ($H, T$) $\to$ Minimize $Z$ $\to$ If Empty, force `[EOS]`**
+
+---
+
+## Related Documents
+
+| Document | Relationship |
+|---|---|
+| [`../math_proofs/mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md`](<../math_proofs/mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md>) | Formal theorem proof for what this document implements in practice |
+| [`../math_proofs/A0_formal_framework_full.md`](../math_proofs/A0_formal_framework_full.md) | General discrete framework; §3–§5 map directly to §3–§5 of this document |
+| [`reality_protocol_rp_implementation_paths_effectiveness_complexity_assessment.md`](reality_protocol_rp_implementation_paths_effectiveness_complexity_assessment.md) | Pareto comparison of Path A/B/C/D with complexity and fidelity tradeoffs |
+| [`../consistency_check.md`](../consistency_check.md) | Empirical measurements (token reduction, hallucination rate) for Path A |
+| [`RP_Hard_QA.md`](RP_Hard_QA.md) | Answers engineering objections including Q1 (prompt trick), Q2 (greedy decoding) |

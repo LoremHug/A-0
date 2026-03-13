@@ -194,3 +194,15 @@ RP claims only this fundamental invariant:
 
 **Unstable computational continuations must not be allowed to exist.**
 **If no stable continuation is mathematically admissible — the system must remain silent.**
+
+---
+
+## Related Documents
+
+| Document | Relationship |
+|---|---|
+| [`../math_proofs/A0_formal_framework_full.md`](../math_proofs/A0_formal_framework_full.md) | Formal mathematical basis for claims in Q1, Q2, Q5, Q8 |
+| [`../math_proofs/mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md`](<../math_proofs/mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md>) | Theorem 1 and implementation regimes; addresses Q1, Q2 in detail |
+| [`../math_proofs/A0_vs_FEP_strict_positioning.md`](../math_proofs/A0_vs_FEP_strict_positioning.md) | Full technical answer to Q4 (FEP relationship) |
+| [`RP_for_ML_Practitioners.md`](RP_for_ML_Practitioners.md) | Engineering translation addressing Q10 (software engineering claim) |
+| [`../math_proofs/reality_protocol_rp_clarifications_scope_and_anticipated_critiques.md`](<../math_proofs/reality_protocol_rp_clarifications_scope_and_anticipated_critiques.md>) | Complementary clarifications document covering scope boundaries |

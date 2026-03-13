@@ -4,6 +4,12 @@
 This appendix provides a **formal, theorem–proof** foundation for the $A_0$ invariant and its operationalization as the Reality Protocol (RP) in **discrete autoregressive transformer** language models. 
 It strictly translates the physical heuristics of RP into tensor operations, proving that stabilization requires structural gating rather than agentic goal-seeking.
 
+**Document position in the framework:**
+- Formal foundation → [`A0_formal_framework_full.md`](A0_formal_framework_full.md) (general discrete framework)
+- Continuous-time proof → [`Formal Derivation of the A₀ Invariant in Open Stochastic Systems.md`](<Formal Derivation of the A₀ Invariant in Open Stochastic Systems.md>)
+- Engineering implementation → [`../ml/RP_for_ML_Practitioners.md`](../ml/RP_for_ML_Practitioners.md)
+- Empirical baseline (Path A results) → [`../consistency_check.md`](../consistency_check.md)
+
 ---
 
 ## 1. Preliminaries and Notation

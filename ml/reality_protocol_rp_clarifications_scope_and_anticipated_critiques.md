@@ -199,3 +199,13 @@ Any interpretation beyond this scope is invalid.
 This document is normative with respect to interpretation, not implementation.
 
 Engineering realizations are expected to diverge in mechanism while preserving invariants.
+
+---
+
+## Related Documents
+
+| Document | Relationship |
+|---|---|
+| [`../math_proofs/A0_formal_framework_full.md`](../math_proofs/A0_formal_framework_full.md) | The formal framework this document clarifies and bounds |
+| [`RP_Hard_QA.md`](RP_Hard_QA.md) | Complementary Q&A format addressing the same objections with direct answers |
+| [`../math_proofs/mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md`](<../math_proofs/mathematical_appendix_a₀_and_rp_for_autoregressive_transformer_llms_lla_ma_class.md>) | The specific LLM implementation with declared assumptions and scope |
